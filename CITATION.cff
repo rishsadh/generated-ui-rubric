@@ -8,5 +8,6 @@ authors:
 version: "0.2.0"
 date-released: "2026-10-27"
 url: "https://github.com/rishsadh/generated-ui-rubric"
+doi: "10.5281/zenodo.23689021"
 license: CC-BY-4.0
-abstract: "A written, anchored rubric for the visual design of AI-generated user interfaces, six frozen prompts, and one set of AI-judge grades reviewed by the author (24 of 30 planned slots). Not independent expert grades. Does not rank tools."
+abstract: "A written, anchored rubric for the visual design of AI-generated user interfaces, six frozen prompts, and one set of AI-judge grades (24 of 30 planned slots, 11 reviewed by the author). Not independent expert grades. Does not rank tools."
