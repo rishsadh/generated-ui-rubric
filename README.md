@@ -78,7 +78,7 @@ Not a benchmark, a leaderboard or a scorer. Not a claim about which tool is best
 ## Cite
 
 ```
-Rish Sadh, "Generated-UI design rubric", version 0.2.0, 2026. https://github.com/rishsadh/generated-ui-rubric. Rubric and data CC BY 4.0.
+Rish Sadh, "Generated-UI design rubric", release v0.2.1 (rubric version 0.2.0), 2026. https://github.com/rishsadh/generated-ui-rubric. Rubric and data CC BY 4.0.
 ```
 
 `CITATION.cff` carries the same. DOI for all versions: [10.5281/zenodo.23689021](https://doi.org/10.5281/zenodo.23689021). This release (v0.2.0): [10.5281/zenodo.23689022](https://doi.org/10.5281/zenodo.23689022).

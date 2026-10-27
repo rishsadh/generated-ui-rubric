@@ -2,6 +2,10 @@
 
 Rubric versions are listed here. A change after a version is frozen is a new version. **0.2.0 is frozen.**
 
+## Release v0.2.1, 2026-10-27
+
+Docs and metadata only. The rubric (0.2.0) and the prompts are unchanged, and both hashes are the same as in v0.2.0. Added the DOI, and corrected the wording that said all grades were reviewed by the author: 11 of the 24 were reviewed and 13 were not. The v0.2.0 Zenodo record carried the older wording, which is why this release exists.
+
 ## 0.2.0 (frozen), 2026-10-27
 
 Frozen by Rish Sadh after reading rules 9 to 13. SHA-256 of `rubric/rubric.json`: `439cb9db9074e29a716211893512d035dd98e990d83e2f6f7bb8210a8621bd96`. Git tag `rubric-v0.2.0` (its commit message omitted the hash by a mistake in my command; the tag content matches the hash). Compared with 0.2.0-draft, only these changed: the version string, the status text, the twelve unwritten good and bad example placeholders (now "Not written in 0.2.0"), and one resolved CONFIRM marker in the measured-facts note. No rule, anchor, question, look-for list, scope or crosswalk line changed.
