@@ -1,0 +1,46 @@
+{
+  "set_version": "0.1.0",
+  "status": "FROZEN",
+  "written": "2026-10-27",
+  "written_by": "Claude. Reviewed by Rish Sadh at G1 on 2026-10-27, who gave no edits.",
+  "how_to_use": [
+    "Paste the text of one prompt into each tool, exactly as written, in a fresh project or chat.",
+    "Take the first output. No regeneration, no follow-up message, no edits.",
+    "If the tool fails or asks a question, record that and answer only 'continue'. Grade whatever exists.",
+    "Record the tool, plan, model name if the tool shows one, and the date and time."
+  ],
+  "prompts": [
+    {
+      "id": "P1",
+      "category": "marketing page",
+      "text": "Design a landing page for a small independent coffee roaster that sells beans by subscription. It should feel warm and a bit premium, and it needs a clear way to start a subscription."
+    },
+    {
+      "id": "P2",
+      "category": "dashboard",
+      "text": "Build a dashboard for a freelance invoicing tool. Show money owed, money received this month, overdue invoices and a list of recent clients."
+    },
+    {
+      "id": "P3",
+      "category": "product page",
+      "text": "Create a product page for a pair of handmade leather boots, with photos, sizes, price, delivery information and customer reviews."
+    },
+    {
+      "id": "P4",
+      "category": "pricing page",
+      "text": "Make a pricing page for a project management app with three plans and a comparison of what each plan includes."
+    },
+    {
+      "id": "P5",
+      "category": "portfolio",
+      "text": "Make a portfolio website for a freelance illustrator who works on children's books. Show selected projects, a short about section and a way to get in touch."
+    },
+    {
+      "id": "P6",
+      "category": "editorial article",
+      "text": "Design an article page for a long magazine feature about the restoration of an old lighthouse. Include the title, a byline, a pull quote, images and links to related stories."
+    }
+  ],
+  "frozen_on": "2026-10-27",
+  "frozen_by": "Rish Sadh, who moved the project to Phase C on 2026-10-27 after reviewing the six prompts at G1 and giving no edits"
+}

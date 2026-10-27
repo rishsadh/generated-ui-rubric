@@ -1,0 +1,950 @@
+{
+  "title": "Generated-UI design rubric: grades and measured facts",
+  "version": "0.2.0",
+  "hashes": {
+    "rubric_sha256": "439cb9db9074e29a716211893512d035dd98e990d83e2f6f7bb8210a8621bd96",
+    "prompts_sha256": "a64ca95d53175a454494211c5f66b158f43cde5e627fb65d7531cc70ebfad4ce"
+  },
+  "status": "The grades are an AI judge's, not independent expert grades. The author reviewed the judge's grades on the first 11 items and marked every row agree. The items added after that are judge-only: the author has not reviewed them.",
+  "slots_planned": 30,
+  "slots_captured": 24,
+  "not_captured": [
+    {
+      "tool": "v0",
+      "slots": 1,
+      "why": "P4 was published for capture, but the deployment held no files and returned a 404. Nothing could be captured."
+    },
+    {
+      "tool": "Bolt",
+      "slots": 5,
+      "why": "P2 renders blank offline because it needs a backend. P3 to P6 were blocked by the free token cap and were not paid for."
+    }
+  ],
+  "items": [
+    {
+      "id": "g-d56cd5",
+      "prompt_id": "P1",
+      "category": "marketing page",
+      "tool": "Bolt",
+      "plan": "Bolt Free plan. The mode selector read Standard.",
+      "captured_on": "2026-10-27",
+      "deviation": null,
+      "measured": {
+        "Font families in use": "2 (Fraunces, Inter)",
+        "Font sizes in use": "11",
+        "Smallest body text": "12 px",
+        "Lowest text contrast": "1.0:1 on button.rounded-full, 14 px, \"Back\"",
+        "Overflow at 375 px": "no"
+      },
+      "defect_flags": [
+        "text under contrast minimum (41 of 146 elements)"
+      ],
+      "judge_grades": {
+        "H": 3,
+        "D1": 4,
+        "D2": 3,
+        "D3": 4,
+        "D4": 3,
+        "D5": 4,
+        "D6": 3
+      },
+      "judge_reasons": {
+        "H": "Rich and premium, but header handling and photo labels need cleaning up.",
+        "D1": "Headline over roaster photo with amber CTA wins first read.",
+        "D2": "Odd dark band above desktop header; mobile header floats over story image.",
+        "D3": "Serif italic accent with clean sans; good scale, small meta text.",
+        "D4": "Brown and amber cohesive; roast labels vanish over photos.",
+        "D5": "Roastery imagery and subscription stepper fit brief; layout familiar.",
+        "D6": "Real photos, but LIGHT ROAST labels clipped, one photo has stray neon sign."
+      },
+      "judge_unsure": true,
+      "reviewed_by_author": true
+    },
+    {
+      "id": "g-366c1e",
+      "prompt_id": "P1",
+      "category": "marketing page",
+      "tool": "ChatGPT",
+      "plan": "ChatGPT in Chat mode. The reasoning selector read Medium. The account plan is not shown on the page.",
+      "captured_on": "2026-10-27",
+      "deviation": null,
+      "measured": {
+        "Font families in use": "3 (DM Sans, Playfair Display, Georgia)",
+        "Font sizes in use": "17",
+        "Smallest body text": "10 px",
+        "Lowest text contrast": "2.5:1 on div.step-num, 55 px, \"01\"",
+        "Overflow at 375 px": "no"
+      },
+      "defect_flags": [
+        "text under contrast minimum (12 of 100 elements)"
+      ],
+      "judge_grades": {
+        "H": 4,
+        "D1": 4,
+        "D2": 4,
+        "D3": 4,
+        "D4": 3,
+        "D5": 4,
+        "D6": 4
+      },
+      "judge_reasons": {
+        "H": "Premium, calm, real photography; small pale text needs a day of fixes.",
+        "D1": "Serif headline with italic accent, bean photo, then dark CTA; clear path.",
+        "D2": "Even grid and generous rhythm; mobile plan cards wrap the 02 / index awkwardly.",
+        "D3": "Elegant serif and sans pairing; body and captions small and pale.",
+        "D4": "Olive, terracotta, cream cohesive; many small grey texts fail contrast.",
+        "D5": "Reads as a premium roaster; plan-card layout is a common template.",
+        "D6": "Real photos and consistent components; disclaimer notes read as filler."
+      },
+      "judge_unsure": true,
+      "reviewed_by_author": true
+    },
+    {
+      "id": "g-c76309",
+      "prompt_id": "P1",
+      "category": "marketing page",
+      "tool": "Claude",
+      "plan": "claude.ai Max plan, Sonnet 5.5 High, Auto. UI prompts were routed to Claude Design, which built the page as a design file.",
+      "captured_on": "2026-10-27",
+      "deviation": null,
+      "measured": {
+        "Font families in use": "2 (Fraunces, DM Sans)",
+        "Font sizes in use": "19",
+        "Smallest body text": "11 px",
+        "Lowest text contrast": "5.1:1 on p, 19 px, \"Build your plan in about a m...\"",
+        "Overflow at 375 px": "no"
+      },
+      "defect_flags": [],
+      "judge_grades": {
+        "H": 4,
+        "D1": 4,
+        "D2": 4,
+        "D3": 4,
+        "D4": 4,
+        "D5": 4,
+        "D6": 3
+      },
+      "judge_reasons": {
+        "H": "Warm, coherent, working plan builder; needs copy fill and small polish.",
+        "D1": "Big serif headline then one rust CTA; builder summary card anchors lower page.",
+        "D2": "Consistent grid and gaps; mobile nav wraps to two rows, slightly loose.",
+        "D3": "Serif display with sans body, clear scale; some tiny 11 px labels.",
+        "D4": "Cream, espresso and rust, each with a role; contrast passes.",
+        "D5": "Subscription builder with roast curve is specific, though cream-and-serif look is common.",
+        "D6": "Bracketed story placeholder and founder name left; bag illustration is polished."
+      },
+      "judge_unsure": false,
+      "reviewed_by_author": true
+    },
+    {
+      "id": "g-1cb038",
+      "prompt_id": "P1",
+      "category": "marketing page",
+      "tool": "Lovable",
+      "plan": "Lovable Free plan, Build mode. The account was new: Lovable showed its first-time onboarding (style, email preferences, role, company size) before the first run.",
+      "captured_on": "2026-10-27",
+      "deviation": null,
+      "measured": {
+        "Font families in use": "3 (Fraunces, Manrope, system-ui)",
+        "Font sizes in use": "8",
+        "Smallest body text": "14 px",
+        "Lowest text contrast": "5.2:1 on p.text-muted-foreground, 16 px, \"The Household · 2 bags / 500...\"",
+        "Overflow at 375 px": "no"
+      },
+      "defect_flags": [],
+      "judge_grades": {
+        "H": 4,
+        "D1": 4,
+        "D2": 4,
+        "D3": 4,
+        "D4": 4,
+        "D5": 3,
+        "D6": 4
+      },
+      "judge_reasons": {
+        "H": "Warm, polished and clear. Real bean photo, obvious subscription path. Needs only minor mobile button and header tidying.",
+        "D1": "Headline wins first, then the filled CTA, then the plan cards. Emphasis is spent well.",
+        "D2": "Consistent grid and gaps on desktop. Mobile stacks sensibly but hero buttons wrap to two lines and the header is tight.",
+        "D3": "Serif display with sans body gives clear scale and good line length. Small plan captions are a little faint.",
+        "D4": "Cream, espresso and one rust accent that marks every action. Contrast passes throughout.",
+        "D5": "Feels coffee and subscription appropriate, but the cream, serif and rust look is a common template for this brief.",
+        "D6": "Real photo, consistent buttons and cards, working plan and cadence picker. No visible rough edges."
+      },
+      "judge_unsure": false,
+      "reviewed_by_author": false
+    },
+    {
+      "id": "g-091cee",
+      "prompt_id": "P1",
+      "category": "marketing page",
+      "tool": "v0",
+      "plan": "v0 account on the team reidifydesign-8051s-projects. Model selector read v0 Mini. The credit indicator read $5 before the runs and $4 after five. No money was spent.",
+      "captured_on": "2026-10-27",
+      "deviation": null,
+      "measured": {
+        "Font families in use": "2 (ui-serif, DM Sans)",
+        "Font sizes in use": "11",
+        "Smallest body text": "12 px",
+        "Lowest text contrast": "1.0:1 on a.font-serif, 20 px, \"KINDRED\" (1 elements over images or gradients not measured)",
+        "Overflow at 375 px": "no"
+      },
+      "defect_flags": [
+        "text under contrast minimum (12 of 58 elements)"
+      ],
+      "judge_grades": {
+        "H": 4,
+        "D1": 4,
+        "D2": 4,
+        "D3": 4,
+        "D4": 4,
+        "D5": 4,
+        "D6": 3
+      },
+      "judge_reasons": {
+        "H": "Premium, warm and clear subscription path. A real photo hero with a nice type pairing. Journal image block needs a real picture.",
+        "D1": "Huge hero headline wins, then the peach button, then the three plans with the middle one lifted.",
+        "D2": "Consistent sections and a three-column plan grid. Mobile stacks well, though hero text overlaps the cup.",
+        "D3": "Large serif with italic accent against tracked small caps and sans. Strong scale, tiny feature text at the low end.",
+        "D4": "Espresso, cream and peach with a single copper accent. Light text over the photo stays readable.",
+        "D5": "Photo, copy and plan names suit a roaster, though the layout is a common premium coffee template.",
+        "D6": "The journal tile is a gradient block with a circle standing in for a photo, so capped at 3 under rule 10."
+      },
+      "judge_unsure": false,
+      "reviewed_by_author": false
+    },
+    {
+      "id": "g-53df32",
+      "prompt_id": "P2",
+      "category": "dashboard",
+      "tool": "ChatGPT",
+      "plan": "ChatGPT in Chat mode, reasoning selector read Medium. The account plan is not shown on the page.",
+      "captured_on": "2026-10-27",
+      "deviation": "The prompt carried one added sentence: \"Deliver it as a single downloadable HTML file, not as an inline preview or widget.\"",
+      "measured": {
+        "Font families in use": "2 (Manrope, DM Sans)",
+        "Font sizes in use": "13",
+        "Smallest body text": "11 px",
+        "Lowest text contrast": "2.1:1 on p.disclaimer, 11 px, \"Demo workspace with fictiona...\"",
+        "Overflow at 375 px": "yes (page is 453 px wide)"
+      },
+      "defect_flags": [
+        "horizontal overflow at 375 px",
+        "text under contrast minimum (49 of 113 elements)"
+      ],
+      "judge_grades": {
+        "H": 3,
+        "D1": 3,
+        "D2": 2,
+        "D3": 4,
+        "D4": 3,
+        "D5": 3,
+        "D6": 3
+      },
+      "judge_reasons": {
+        "H": "Polished desktop, but 375 px overflows to 453 px; rule 11 caps at 3.",
+        "D1": "Greeting and New invoice lead; four equal stat cards then compete.",
+        "D2": "Mobile invoices card wider than others, overflow; empty space in activity and clients cards.",
+        "D3": "Manrope with clear heading/number/label scale; chart axis labels tiny.",
+        "D4": "Single blue accent, tidy status tints; many faint grey texts fail contrast.",
+        "D5": "Competent generic SaaS dashboard; fits invoicing but interchangeable.",
+        "D6": "Consistent cards and pills, but $0 beside +12.8%, faint tiny disclaimer, overflow."
+      },
+      "judge_unsure": true,
+      "reviewed_by_author": false
+    },
+    {
+      "id": "g-0bf98b",
+      "prompt_id": "P2",
+      "category": "dashboard",
+      "tool": "Claude (Claude Code subagent)",
+      "plan": "Claude Code subagent, Sonnet",
+      "captured_on": "2026-10-27",
+      "deviation": "Built by a Claude Code subagent as one editable HTML file, not in claude.ai. The prompt carried an added format instruction.",
+      "measured": {
+        "Font families in use": "1 (ui-sans-serif)",
+        "Font sizes in use": "8",
+        "Smallest body text": "12 px",
+        "Lowest text contrast": "3.1:1 on span.pill, 12 px, \"1 day late\"",
+        "Overflow at 375 px": "no"
+      },
+      "defect_flags": [
+        "text under contrast minimum (27 of 82 elements)"
+      ],
+      "judge_grades": {
+        "H": 4,
+        "D1": 4,
+        "D2": 3,
+        "D3": 3,
+        "D4": 4,
+        "D5": 4,
+        "D6": 4
+      },
+      "judge_reasons": {
+        "H": "Strong on task and mobile; cramped overdue table and clipped mobile nav need fixes.",
+        "D1": "Money owed first, red overdue figure and table follow; deliberate path.",
+        "D2": "Desktop overdue table columns wrap names and dates; mobile stack is considered.",
+        "D3": "System sans only; clear number and label scale, but plain and small chart labels.",
+        "D4": "Warm cream with green, amber, red each carrying meaning; some pills near 3:1.",
+        "D5": "Send reminder, Mark paid and aging bar suit freelancer chasing payments.",
+        "D6": "Consistent cards, pills, avatars, real content; mobile chart labels tiny, nav clipped."
+      },
+      "judge_unsure": true,
+      "reviewed_by_author": false
+    },
+    {
+      "id": "g-96bbfc",
+      "prompt_id": "P2",
+      "category": "dashboard",
+      "tool": "Lovable",
+      "plan": "Lovable Free plan, Build mode. The account was new: Lovable showed its first-time onboarding (style, email preferences, role, company size) before the first run.",
+      "captured_on": "2026-10-27",
+      "deviation": null,
+      "measured": {
+        "Font families in use": "3 (DM Sans, Fraunces, system-ui)",
+        "Font sizes in use": "6",
+        "Smallest body text": "12 px",
+        "Lowest text contrast": "3.6:1 on span.rounded-full, 12 px, \"Overdue\"",
+        "Overflow at 375 px": "no"
+      },
+      "defect_flags": [
+        "text under contrast minimum (6 of 53 elements)"
+      ],
+      "judge_grades": {
+        "H": 4,
+        "D1": 4,
+        "D2": 3,
+        "D3": 4,
+        "D4": 3,
+        "D5": 3,
+        "D6": 3
+      },
+      "judge_reasons": {
+        "H": "Clean and credible on desktop. Mobile table cells crowd each other and the overdue card is half empty, but fixes are small.",
+        "D1": "Three large stat figures lead, then the two panels. Colour on the figures sets order well.",
+        "D2": "Good desktop grid, but the overdue card leaves a big gap. At 375 the status pills touch the amounts.",
+        "D3": "Display serif for figures and headings over a clean sans. Clear scale, labels small but readable.",
+        "D4": "Cream with green and red works, yet pure red is harsh and the pale pill text measures 3.6 to 1.",
+        "D5": "Suits an invoicing tool and the figures read well, but it is a familiar card dashboard with little that is specific.",
+        "D6": "Components are consistent. Wrapped client names and pills touching amounts on mobile feel unfinished."
+      },
+      "judge_unsure": true,
+      "reviewed_by_author": false
+    },
+    {
+      "id": "g-9a8c1f",
+      "prompt_id": "P2",
+      "category": "dashboard",
+      "tool": "v0",
+      "plan": "v0 account on the team reidifydesign-8051s-projects. Model selector read v0 Mini. The credit indicator read $5 before the runs and $4 after five. No money was spent.",
+      "captured_on": "2026-10-27",
+      "deviation": null,
+      "measured": {
+        "Font families in use": "1 (Arial)",
+        "Font sizes in use": "12",
+        "Smallest body text": "10 px",
+        "Lowest text contrast": "2.3:1 on p.footer-note, 10 px, \"All numbers are in USD Last ...\"",
+        "Overflow at 375 px": "no"
+      },
+      "defect_flags": [
+        "text under contrast minimum (48 of 90 elements)"
+      ],
+      "judge_grades": {
+        "H": 4,
+        "D1": 4,
+        "D2": 4,
+        "D3": 3,
+        "D4": 3,
+        "D5": 3,
+        "D6": 4
+      },
+      "judge_reasons": {
+        "H": "Polished, complete dashboard with chart and sidebar. Faint small grey text and tiny labels need a pass.",
+        "D1": "Greeting and New invoice button first, then three tinted stat cards. Order matches the dashboard's purpose.",
+        "D2": "Sidebar, cards and lists align on a clear grid. Mobile stacks cleanly with sensible collapsing.",
+        "D3": "Single sans with a decent scale, but many small light-grey labels at 10 to 12 px read weakly.",
+        "D4": "Purple and mint accents are cohesive, but many grey texts fail contrast, measured 2.3 to 1 on footnotes.",
+        "D5": "Competent invoicing dashboard, yet it looks like a standard SaaS admin template with nothing specific.",
+        "D6": "Avatars, icons, chart and cards are consistent and complete. Reads as a real product."
+      },
+      "judge_unsure": true,
+      "reviewed_by_author": false
+    },
+    {
+      "id": "g-e52870",
+      "prompt_id": "P3",
+      "category": "product page",
+      "tool": "ChatGPT",
+      "plan": "ChatGPT in Chat mode. The reasoning selector read Medium. The account plan is not shown on the page.",
+      "captured_on": "2026-10-27",
+      "deviation": null,
+      "measured": {
+        "Font families in use": "2 (DM Sans, Playfair Display)",
+        "Font sizes in use": "14",
+        "Smallest body text": "10 px",
+        "Lowest text contrast": "2.6:1 on span, 25 px, \"&\"",
+        "Overflow at 375 px": "no"
+      },
+      "defect_flags": [
+        "text under contrast minimum (23 of 87 elements)"
+      ],
+      "judge_grades": {
+        "H": 4,
+        "D1": 4,
+        "D2": 3,
+        "D3": 4,
+        "D4": 3,
+        "D5": 4,
+        "D6": 4
+      },
+      "judge_reasons": {
+        "H": "Premium, real boot photography; spacing gaps and faint small text need fixes.",
+        "D1": "Boot photo then title, price and dark Add to bag.",
+        "D2": "Large empty column under gallery on desktop; mobile is well ordered.",
+        "D3": "Serif display with light sans; elegant but small light grey text.",
+        "D4": "Chestnut, cream and charcoal cohesive; many small grey texts fall below contrast.",
+        "D5": "Heritage tone and craft voice suit boots; common premium-shop template.",
+        "D6": "Real photos, consistent components; sample-content disclaimers repeated but honest."
+      },
+      "judge_unsure": false,
+      "reviewed_by_author": true
+    },
+    {
+      "id": "g-705370",
+      "prompt_id": "P3",
+      "category": "product page",
+      "tool": "Claude",
+      "plan": "claude.ai Max plan, Sonnet 5.5 High, Auto. UI prompts were routed to Claude Design, which built the page as a design file.",
+      "captured_on": "2026-10-27",
+      "deviation": null,
+      "measured": {
+        "Font families in use": "2 (Archivo, Arial)",
+        "Font sizes in use": "14",
+        "Smallest body text": "12 px",
+        "Lowest text contrast": "1.8:1 on span, 18 px, \"★\"",
+        "Overflow at 375 px": "no"
+      },
+      "defect_flags": [
+        "text under contrast minimum (1 of 117 elements)"
+      ],
+      "judge_grades": {
+        "H": 3,
+        "D1": 4,
+        "D2": 4,
+        "D3": 4,
+        "D4": 3,
+        "D5": 3,
+        "D6": 2
+      },
+      "judge_reasons": {
+        "H": "Solid product layout, but boot art and grey thumbnails are not real photos.",
+        "D1": "Boot, name, price and Add to bag read in clear order.",
+        "D2": "Consistent grid and gaps; mobile stacks sensibly, size grid works.",
+        "D3": "Heavy grotesque headings, readable body, clear scale at both widths.",
+        "D4": "Brown and cream cohesive but safe; accent role limited, star glyph low contrast.",
+        "D5": "Leather-brown suits boots; otherwise a standard product-page template.",
+        "D6": "Grey label boxes as thumbnails, vector boot, sample-content notices throughout."
+      },
+      "judge_unsure": false,
+      "reviewed_by_author": true
+    },
+    {
+      "id": "g-c2e891",
+      "prompt_id": "P3",
+      "category": "product page",
+      "tool": "Lovable",
+      "plan": "Lovable Free plan, Build mode. The account was new: Lovable showed its first-time onboarding (style, email preferences, role, company size) before the first run.",
+      "captured_on": "2026-10-27",
+      "deviation": null,
+      "measured": {
+        "Font families in use": "3 (Fraunces, Work Sans, system-ui)",
+        "Font sizes in use": "6",
+        "Smallest body text": "12 px",
+        "Lowest text contrast": "2.5:1 on p.text-xs, 12 px, \"Handmade · Goodyear welted\"",
+        "Overflow at 375 px": "no"
+      },
+      "defect_flags": [
+        "text under contrast minimum (3 of 33 elements)"
+      ],
+      "judge_grades": {
+        "H": 4,
+        "D1": 4,
+        "D2": 4,
+        "D3": 4,
+        "D4": 4,
+        "D5": 4,
+        "D6": 4
+      },
+      "judge_reasons": {
+        "H": "Strong product page with a real boot photo, sizes, delivery and reviews. Small tan labels are faint, otherwise near ready.",
+        "D1": "Photo, then title and price, then sizes and button. The disabled button is pale but the order is right.",
+        "D2": "Two clear columns, even size grid and review cards. Mobile reorders sensibly into a single column.",
+        "D3": "Display serif title with a quiet sans body. Good scale and line length at both widths.",
+        "D4": "Warm leather palette with one tan accent. Small eyebrow labels are low contrast but body text passes.",
+        "D5": "Bootmaker heritage tone, resole and welted details and a leather palette fit this product well.",
+        "D6": "Real photos, working size grid, icons and review stars consistent. Only two thumbnails and a thin gallery."
+      },
+      "judge_unsure": false,
+      "reviewed_by_author": false
+    },
+    {
+      "id": "g-c02aa9",
+      "prompt_id": "P3",
+      "category": "product page",
+      "tool": "v0",
+      "plan": "v0 account on the team reidifydesign-8051s-projects. Model selector read v0 Mini. The credit indicator read $5 before the runs and $4 after five. No money was spent.",
+      "captured_on": "2026-10-27",
+      "deviation": null,
+      "measured": {
+        "Font families in use": "2 (-apple-system, ui-serif)",
+        "Font sizes in use": "10",
+        "Smallest body text": "10 px",
+        "Lowest text contrast": "3.3:1 on a, 10 px, \"Shop\"",
+        "Overflow at 375 px": "no"
+      },
+      "defect_flags": [
+        "text under contrast minimum (17 of 54 elements)"
+      ],
+      "judge_grades": {
+        "H": 4,
+        "D1": 4,
+        "D2": 4,
+        "D3": 4,
+        "D4": 4,
+        "D5": 3,
+        "D6": 4
+      },
+      "judge_reasons": {
+        "H": "A refined, complete store page with real boot photos. Header collision on mobile and faint small text are quick fixes.",
+        "D1": "Large boot photo, then title and price, then size grid and the solid Add to bag button.",
+        "D2": "Clean gallery and details columns. On mobile the logo sits against the heart icon in the header.",
+        "D3": "Serif title with spaced small caps labels and clean sans. Good scale, though labels run very small.",
+        "D4": "Cream, espresso and one tan accent with a dark selected state. Small grey captions are low contrast.",
+        "D5": "Elegant and boot appropriate, but it is a familiar premium ecommerce product page.",
+        "D6": "Three real photos, carousel arrows, accordions, stars, quantity stepper all consistent. Reads as finished."
+      },
+      "judge_unsure": true,
+      "reviewed_by_author": false
+    },
+    {
+      "id": "g-84cd36",
+      "prompt_id": "P4",
+      "category": "pricing page",
+      "tool": "ChatGPT",
+      "plan": "ChatGPT in Chat mode. The reasoning selector read Medium. The account plan is not shown on the page.",
+      "captured_on": "2026-10-27",
+      "deviation": null,
+      "measured": {
+        "Font families in use": "1 (Inter)",
+        "Font sizes in use": "12",
+        "Smallest body text": "11 px",
+        "Lowest text contrast": "10.1:1 on span.badge, 11 px, \"Most popular\" (134 elements over images or gradients not measured)",
+        "Overflow at 375 px": "no"
+      },
+      "defect_flags": [],
+      "judge_grades": {
+        "H": 3,
+        "D1": 4,
+        "D2": 3,
+        "D3": 4,
+        "D4": 4,
+        "D5": 3,
+        "D6": 4
+      },
+      "judge_reasons": {
+        "H": "Polished dark SaaS, but mobile comparison table shows no plan columns.",
+        "D1": "Large headline, then highlighted Pro card with light CTA; clear order.",
+        "D2": "Desktop strong; mobile table shows only Feature column, values not visible.",
+        "D3": "Single tight grotesque, strong heading contrast; table text small.",
+        "D4": "Navy with blue accent restrained; grey small text low-ish on dark.",
+        "D5": "Competent but generic dark gradient SaaS look.",
+        "D6": "Consistent badges, icons, table and FAQ; no visible rough edges."
+      },
+      "judge_unsure": true,
+      "reviewed_by_author": true
+    },
+    {
+      "id": "g-74225e",
+      "prompt_id": "P4",
+      "category": "pricing page",
+      "tool": "Claude",
+      "plan": "claude.ai Max plan, Sonnet 5.5 High, Auto. UI prompts were routed to Claude Design, which built the page as a design file.",
+      "captured_on": "2026-10-27",
+      "deviation": null,
+      "measured": {
+        "Font families in use": "2 (Bricolage Grotesque, DM Sans)",
+        "Font sizes in use": "14",
+        "Smallest body text": "12 px",
+        "Lowest text contrast": "6.9:1 on p, 18 px, \"Every plan covers the basics...\"",
+        "Overflow at 375 px": "no"
+      },
+      "defect_flags": [],
+      "judge_grades": {
+        "H": 4,
+        "D1": 4,
+        "D2": 4,
+        "D3": 4,
+        "D4": 4,
+        "D5": 3,
+        "D6": 4
+      },
+      "judge_reasons": {
+        "H": "Clean, usable pricing page; sendable after small mobile nav polish.",
+        "D1": "Headline, toggle, then inverted Team card draws eye to the featured plan.",
+        "D2": "Even grid and spacing; mobile nav puts Log in on its own row.",
+        "D3": "Bold grotesque headings, clear scale, comfortable table and list text.",
+        "D4": "Navy, white and one blue accent, each with a job; contrast passes.",
+        "D5": "Competent but interchangeable SaaS pricing page.",
+        "D6": "Consistent checks, badges and grouped table; no visible rough edges."
+      },
+      "judge_unsure": false,
+      "reviewed_by_author": true
+    },
+    {
+      "id": "g-bf3bd5",
+      "prompt_id": "P4",
+      "category": "pricing page",
+      "tool": "Lovable",
+      "plan": "Lovable Free plan, Build mode. The account was new: Lovable showed its first-time onboarding (style, email preferences, role, company size) before the first run.",
+      "captured_on": "2026-10-27",
+      "deviation": null,
+      "measured": {
+        "Font families in use": "4 (ui-monospace, Fraunces, Manrope, system-ui)",
+        "Font sizes in use": "7",
+        "Smallest body text": "12 px",
+        "Lowest text contrast": "5.3:1 on p.mt-2, 14 px, \"For growing teams shipping w...\"",
+        "Overflow at 375 px": "no"
+      },
+      "defect_flags": [],
+      "judge_grades": {
+        "H": 3,
+        "D1": 4,
+        "D2": 2,
+        "D3": 4,
+        "D4": 4,
+        "D5": 3,
+        "D6": 4
+      },
+      "judge_reasons": {
+        "H": "Excellent at 1280, but at 375 the comparison table is clipped to one column, so rule 11 caps this at 3.",
+        "D1": "Headline, then the green highlighted Team plan with a yellow button. Clear emphasis on the plan to buy.",
+        "D2": "Desktop grid is strong. At 375 the table is cut at the right edge, hiding Team and Business and truncating text.",
+        "D3": "Display serif for prices and headings, mono eyebrows, clean sans table. Clear scale and good line length.",
+        "D4": "Deep green with yellow action and neutral cream. Each colour has a job and contrast holds.",
+        "D5": "Highlighted plan and sectioned comparison suit pricing, but the structure is the standard SaaS pricing template.",
+        "D6": "Consistent cards, buttons, checks and dashes. Content reads as real and the components match."
+      },
+      "judge_unsure": false,
+      "reviewed_by_author": false
+    },
+    {
+      "id": "g-26706b",
+      "prompt_id": "P5",
+      "category": "portfolio",
+      "tool": "ChatGPT",
+      "plan": "ChatGPT in Chat mode. The reasoning selector read Medium. The account plan is not shown on the page.",
+      "captured_on": "2026-10-27",
+      "deviation": null,
+      "measured": {
+        "Font families in use": "2 (Georgia, Inter)",
+        "Font sizes in use": "14",
+        "Smallest body text": "11.52 px",
+        "Lowest text contrast": "2.9:1 on span, 16 px, \"✦\" (17 elements over images or gradients not measured)",
+        "Overflow at 375 px": "no"
+      },
+      "defect_flags": [
+        "text under contrast minimum (5 of 29 elements)"
+      ],
+      "judge_grades": {
+        "H": 3,
+        "D1": 4,
+        "D2": 3,
+        "D3": 4,
+        "D4": 4,
+        "D5": 4,
+        "D6": 3
+      },
+      "judge_reasons": {
+        "H": "Lovely tone, but mobile header covers the headline and cards look unfinished.",
+        "D1": "Large serif headline with coral emphasis, then blob art, then projects.",
+        "D2": "Mobile sticky header cuts headline; desktop card images leave white side margins.",
+        "D3": "Characterful serif headings, quiet readable sans body, good scale.",
+        "D4": "Warm cream, coral, sage cohesive; coral used with restraint.",
+        "D5": "Organic blobs and storybook scenes feel made for this illustrator.",
+        "D6": "Hero label truncated, art not filling cards, illustrations stand in for work."
+      },
+      "judge_unsure": true,
+      "reviewed_by_author": true
+    },
+    {
+      "id": "g-ecb10e",
+      "prompt_id": "P5",
+      "category": "portfolio",
+      "tool": "Claude",
+      "plan": "claude.ai Max plan, Sonnet 5.5 High, Auto. UI prompts were routed to Claude Design, which built the page as a design file.",
+      "captured_on": "2026-10-27",
+      "deviation": null,
+      "measured": {
+        "Font families in use": "2 (Fraunces, Nunito Sans)",
+        "Font sizes in use": "9",
+        "Smallest body text": "14 px",
+        "Lowest text contrast": "4.8:1 on a, 18 px, \"Get in touch\"",
+        "Overflow at 375 px": "no"
+      },
+      "defect_flags": [],
+      "judge_grades": {
+        "H": 3,
+        "D1": 4,
+        "D2": 4,
+        "D3": 4,
+        "D4": 4,
+        "D5": 4,
+        "D6": 2
+      },
+      "judge_reasons": {
+        "H": "Charming and well built, but placeholders and portrait stand-in need filling.",
+        "D1": "Bold headline, red primary and outline secondary CTA, then work cards.",
+        "D2": "Clean grid; mobile nav stacks awkwardly with the button on its own row.",
+        "D3": "Chunky serif headings over readable sans with clear scale.",
+        "D4": "Teal, cream, red and yellow palette bright but cohesive, accent marks actions.",
+        "D5": "Playful flat colour illustration suits children's books well.",
+        "D6": "Yellow circle portrait stand-in, [PUBLISHER] [YEAR], Your Name, example email."
+      },
+      "judge_unsure": false,
+      "reviewed_by_author": true
+    },
+    {
+      "id": "g-a1b22b",
+      "prompt_id": "P5",
+      "category": "portfolio",
+      "tool": "Lovable",
+      "plan": "Lovable Free plan, Build mode. The account was new: Lovable showed its first-time onboarding (style, email preferences, role, company size) before the first run.",
+      "captured_on": "2026-10-27",
+      "deviation": null,
+      "measured": {
+        "Font families in use": "3 (Fraunces, Nunito, system-ui)",
+        "Font sizes in use": "7",
+        "Smallest body text": "14 px",
+        "Lowest text contrast": "3.6:1 on em.text-primary, 60 px, \"small hands\"",
+        "Overflow at 375 px": "no"
+      },
+      "defect_flags": [
+        "text under contrast minimum (3 of 26 elements)"
+      ],
+      "judge_grades": {
+        "H": 4,
+        "D1": 4,
+        "D2": 3,
+        "D3": 4,
+        "D4": 4,
+        "D5": 4,
+        "D6": 4
+      },
+      "judge_reasons": {
+        "H": "Charming and fitting, with real illustrations. Needs spacing and mobile header fixes before delivery.",
+        "D1": "Large headline with italic accent leads, then the tilted hero art and the coral button.",
+        "D2": "Staggered project grid leaves uneven bottoms. On mobile the logo sits against the Work link.",
+        "D3": "Bold serif headings with rounded sans body, italic accent word. Clear, friendly scale and good line length.",
+        "D4": "Cream, coral and sage with a yellow sun. Cohesive, accent marks actions. Form placeholder text is faint.",
+        "D5": "Gouache, soft shapes and tilted frame feel made for a children's illustrator, though layout is a familiar portfolio.",
+        "D6": "Real artwork, consistent frames and captions. The hero art repeats the first project, a small filler flaw."
+      },
+      "judge_unsure": true,
+      "reviewed_by_author": false
+    },
+    {
+      "id": "g-072f13",
+      "prompt_id": "P5",
+      "category": "portfolio",
+      "tool": "v0",
+      "plan": "v0 account on the team reidifydesign-8051s-projects. Model selector read v0 Mini. The credit indicator read $5 before the runs and $4 after five. No money was spent.",
+      "captured_on": "2026-10-27",
+      "deviation": null,
+      "measured": {
+        "Font families in use": "2 (Fraunces, Inter)",
+        "Font sizes in use": "10",
+        "Smallest body text": "12 px",
+        "Lowest text contrast": "2.7:1 on p.text-xs, 12 px, \"Let's make something lovely\"",
+        "Overflow at 375 px": "no"
+      },
+      "defect_flags": [
+        "text under contrast minimum (17 of 36 elements)"
+      ],
+      "judge_grades": {
+        "H": 4,
+        "D1": 4,
+        "D2": 4,
+        "D3": 5,
+        "D4": 4,
+        "D5": 4,
+        "D6": 4
+      },
+      "judge_reasons": {
+        "H": "Distinctive, warm and complete with real illustrations. A clipped note on mobile and faint coral text remain.",
+        "D1": "Tight display headline with coral italic leads, then the oval illustration. Clear, confident first read.",
+        "D2": "Even three-up work grid and full-width bands. Mobile stacks well, though the handwritten note is partly hidden.",
+        "D3": "Large tight serif with italic accent, spaced caps labels and clean sans. Strong scale and contrast.",
+        "D4": "Cream, charcoal and coral with a yellow dot. Cohesive and bold, but small white text on coral is faint.",
+        "D5": "Blob frame, handwritten note, numbered works and coral contact band feel made for a children's illustrator.",
+        "D6": "Real artwork, consistent cards and numbering. The about band's empty left column is a small rough edge."
+      },
+      "judge_unsure": true,
+      "reviewed_by_author": false
+    },
+    {
+      "id": "g-d0057e",
+      "prompt_id": "P6",
+      "category": "editorial article",
+      "tool": "ChatGPT",
+      "plan": "ChatGPT in Chat mode. The reasoning selector read Medium. The account plan is not shown on the page.",
+      "captured_on": "2026-10-27",
+      "deviation": null,
+      "measured": {
+        "Font families in use": "3 (Playfair Display, DM Sans, DM Mono)",
+        "Font sizes in use": "14",
+        "Smallest body text": "10 px",
+        "Lowest text contrast": "2.1:1 on span, 11 px, \"/\"",
+        "Overflow at 375 px": "no"
+      },
+      "defect_flags": [
+        "text under contrast minimum (17 of 67 elements)"
+      ],
+      "judge_grades": {
+        "H": 4,
+        "D1": 5,
+        "D2": 4,
+        "D3": 5,
+        "D4": 4,
+        "D5": 4,
+        "D6": 4
+      },
+      "judge_reasons": {
+        "H": "Editorial polish is high; hero photo is a sunset, not a lighthouse.",
+        "D1": "Title, deck, byline, hero image, drop cap: deliberate reading path.",
+        "D2": "Narrow reading column, sidebar and full-bleed quote handled well at both widths.",
+        "D3": "Display serif and body serif with mono captions, excellent scale and measure.",
+        "D4": "Cream, ink, one rust accent; tiny mono captions are faint.",
+        "D5": "Magazine feature feel, index sidebar and pull quote fit the brief.",
+        "D6": "Real photos and consistent details; hero image does not match lighthouse topic."
+      },
+      "judge_unsure": true,
+      "reviewed_by_author": true
+    },
+    {
+      "id": "g-e1a323",
+      "prompt_id": "P6",
+      "category": "editorial article",
+      "tool": "Claude",
+      "plan": "claude.ai Max plan, Sonnet 5.5 High, Auto. UI prompts were routed to Claude Design, which built the page as a design file.",
+      "captured_on": "2026-10-27",
+      "deviation": null,
+      "measured": {
+        "Font families in use": "3 (Fraunces, Inter Tight, Newsreader)",
+        "Font sizes in use": "16",
+        "Smallest body text": "12 px",
+        "Lowest text contrast": "1.7:1 on div, 140 px, \"“\"",
+        "Overflow at 375 px": "no"
+      },
+      "defect_flags": [
+        "text under contrast minimum (4 of 66 elements)"
+      ],
+      "judge_grades": {
+        "H": 4,
+        "D1": 4,
+        "D2": 4,
+        "D3": 5,
+        "D4": 4,
+        "D5": 4,
+        "D6": 2
+      },
+      "judge_reasons": {
+        "H": "Strong editorial design; bracket placeholders and drawn images are asset gaps.",
+        "D1": "Dark hero headline, then drop cap, then pull quote; clear order.",
+        "D2": "Good columns and rhythm; mobile contents list narrower than the column.",
+        "D3": "Serif display, italic deck and drop cap, comfortable measure at both widths.",
+        "D4": "Navy, cream and amber with clear roles; decorative quote mark faint.",
+        "D5": "Lighthouse art, navy and amber mood and contents sidebar fit brief.",
+        "D6": "[Author Name], [NUMBER], [LOCATION], [Photo credit]; flat illustrations stand in for photos."
+      },
+      "judge_unsure": true,
+      "reviewed_by_author": true
+    },
+    {
+      "id": "g-628a17",
+      "prompt_id": "P6",
+      "category": "editorial article",
+      "tool": "Lovable",
+      "plan": "Lovable Free plan, Build mode. The account was new: Lovable showed its first-time onboarding (style, email preferences, role, company size) before the first run.",
+      "captured_on": "2026-10-27",
+      "deviation": null,
+      "measured": {
+        "Font families in use": "3 (Fraunces, Instrument Sans, system-ui)",
+        "Font sizes in use": "6",
+        "Smallest body text": "12 px",
+        "Lowest text contrast": "4.1:1 on p.text-xs, 12 px, \"Heritage\"",
+        "Overflow at 375 px": "no"
+      },
+      "defect_flags": [
+        "text under contrast minimum (7 of 41 elements)"
+      ],
+      "judge_grades": {
+        "H": 4,
+        "D1": 4,
+        "D2": 4,
+        "D3": 5,
+        "D4": 4,
+        "D5": 4,
+        "D6": 4
+      },
+      "judge_reasons": {
+        "H": "Elegant editorial page with real images, drop cap and pull quote. Small mobile header and byline wrapping to tidy.",
+        "D1": "Large italic-accented title, then deck and byline, then the hero photo. Clear reading order.",
+        "D2": "Comfortable measure, generous margins and balanced image pair. Mobile header and byline wrap awkwardly.",
+        "D3": "Light display serif with italic accent, serif body, small caps eyebrows. Purposeful contrast and ideal line length.",
+        "D4": "Warm paper tone with a single copper accent for labels and drop cap. Small eyebrow text is slightly low.",
+        "D5": "Reads as a coastal heritage magazine feature, with caption, drop cap and numbered section labels.",
+        "D6": "Real photos, captions, a consistent pull quote. Drop cap gap and mobile caption crowding are minor."
+      },
+      "judge_unsure": false,
+      "reviewed_by_author": false
+    },
+    {
+      "id": "g-c625ef",
+      "prompt_id": "P6",
+      "category": "editorial article",
+      "tool": "v0",
+      "plan": "v0 account on the team reidifydesign-8051s-projects. Model selector read v0 Mini. The credit indicator read $5 before the runs and $4 after five. No money was spent.",
+      "captured_on": "2026-10-27",
+      "deviation": null,
+      "measured": {
+        "Font families in use": "3 (Libre Baskerville, Manrope, DM Mono)",
+        "Font sizes in use": "13",
+        "Smallest body text": "9 px",
+        "Lowest text contrast": "1.2:1 on span.image-credit, 10 px, \"Cape Wrath, Scotland   /   5...\"",
+        "Overflow at 375 px": "no"
+      },
+      "defect_flags": [
+        "text under contrast minimum (25 of 46 elements)"
+      ],
+      "judge_grades": {
+        "H": 4,
+        "D1": 4,
+        "D2": 4,
+        "D3": 3,
+        "D4": 3,
+        "D5": 4,
+        "D6": 4
+      },
+      "judge_reasons": {
+        "H": "Strong editorial feature with real photography. The very small mono labels and faint credits need a legibility pass.",
+        "D1": "Huge tight headline and hero photo lead, then the standfirst, byline and a clear copper pull quote.",
+        "D2": "Asymmetric editorial grid with a considered side column. Mobile collapses well. Desktop left column is mostly empty.",
+        "D3": "Handsome serif display and mono captions, but body and labels are small, down to 9 px, and tightly tracked.",
+        "D4": "Cool slate and teal with one copper accent used well, but small credits and labels are low contrast.",
+        "D5": "Field notes tone, coordinates, issue label and storm photography are specific to this lighthouse feature.",
+        "D6": "Real photos, credits, numbered captions, related stories. Related tiles reuse the same pictures."
+      },
+      "judge_unsure": true,
+      "reviewed_by_author": false
+    }
+  ]
+}
